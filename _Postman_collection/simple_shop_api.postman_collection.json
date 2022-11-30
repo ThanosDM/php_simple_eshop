@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "3d026353-5fac-446b-a1ed-d1d71a740415",
+		"name": "simple_shop_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14656976"
+	},
+	"item": [
+		{
+			"name": "read_all_products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "read_product_by_id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create_product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update_product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"p_id\": \"67\",\r\n\"p_name\": \"test product 67\",\r\n\"p_description\": \"test description fsdlkgjdjgkldfjgkldfjklg\",\r\n\"p_code\": \"1003\",\r\n\"p_sku\": \"1000-1000-3333\",\r\n\"p_price\": \"44\",\r\n\"p_quantity\": \"1300\",\r\n\"p_weight\": \"13\",\r\n\"p_status\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/simple_shop_api/api/product/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"simple_shop_api",
+						"api",
+						"product",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"p_id\": \"33\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/simple_shop_api/api/product/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"simple_shop_api",
+						"api",
+						"product",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
